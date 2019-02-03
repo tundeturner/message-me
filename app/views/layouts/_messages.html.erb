@@ -1,0 +1,11 @@
+<div class="ui container">
+  <% flash.each do |name, msg| %>
+    <div class="ui message <%= name %> transition floating">
+      <i class="close icon"></i>
+      <div class="header">
+        <%= name.upcase %>
+      </div>
+      <p><%= msg if msg.is_a?(String) %></p>
+    </div>
+  <% end %>
+</div>

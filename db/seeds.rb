@@ -8,7 +8,7 @@
 
 bill = User.new(username: "bill", password: "password")
 sally = User.new(username: "sally", password: "password")
-tunde = User.new(username: "TUNDE", password: "password")
+tunde = User.new(username: "tunde", password: "password")
 
 Message.create(user: bill, body: "Hello everyone!")
 Message.create(user: sally, body: "hey there, bill")
